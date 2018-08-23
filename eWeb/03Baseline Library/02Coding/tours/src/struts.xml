@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<!--游客表动作-->
+		<action name="register" class="touristA" method="add">
+			<result name="hasAdd">tourist/用户功能.jsp</result>
+		</action>
+		<action name="login" class="touristA" method="isRegister">
+			<result name="rightAccount">tourist/用户功能.jsp </result>
+			<result name="wrongAccount">tourist/登陆注册.jsp</result>
+		</action>
+		<action name="changepsd" class="touristA" method="changepsd">
+			<result name="hasChange">/touristlist.jsp</result> 
+		</action>
+		<action name="findalltourist" class="touristA" method="findall">
+			<result name="hasFindAll">/touristlist.jsp</result> 
+		</action>
+		
+		
+		
+		<!--管理员表动作-->
+		<action name="adminregister" class="adminA" method="add">
+			<result name="hasAdd">/admin/管理员功能.jsp</result>
+		</action>
+		<action name="adminlogin" class="adminA" method="isRegister">
+			<result name="rightAccount">/admin/管理员功能.jsp</result>
+			<result name="wrongAccount">/admin/管理员登陆.jsp</result>
+		</action>
+		<action name="adminchange" class="adminA" method="change">
+			<result name="hasChange">/adminlist.jsp</result> 
+		</action>
+		<action name="adminfindall" class="adminA" method="findall">
+			<result name="hasFindAll">/adminlist.jsp</result> 
+		</action>
+		
+		<!--投诉表动作-->
+		<action name="newcomplaint" class="complaintA" method="add">
+			<result name="hasAdd">/tourist/用户功能.jsp</result>
+		</action>
+		<action name="changecomplaint" class="complaintA" method="change">
+			<result name="hasChange">/admin/管理员功能.jsp</result> 
+		</action>
+		<action name="findallcomplaint" class="complaintA" method="findall">
+			<result name="hasFindAll">/complaint/管理员查看建议.jsp</result> 
+		</action>
+		<action name="deletecomplaint" class="complaintA" method="delete">
+			<result name="hasDelete">/admin/管理员功能.jsp</result> 
+		</action>
+		<action name="eva" class="complaintA" method="eva">
+			<result name="hasEva">/tourist/用户功能.jsp</result> 
+			<result name="NotHandle">/complaint/用户查看建议.jsp</result> 
+		</action>
+		<action name="userlist" class="complaintA" method="findallthose">
+			<result name="hasFindAll">/complaint/用户查看建议.jsp</result> 
+		</action>
+		
+		
+		<!--应急消息表动作-->
+		<action name="addemergency" class="emergencyA" method="add">
+			<result name="hasAdd">/emergency/管理员旅游应急.jsp</result>
+		</action>
+		<action name="changeemergency" class="emergencyA" method="change">
+			<result name="hasChange">/admin/管理员功能.jsp</result> 
+		</action>
+		<action name="findallemergency" class="emergencyA" method="findall">
+			<result name="hasFindAll">/emergency/管理员旅游应急.jsp</result> 
+		</action>
+		<action name="deleteemergency" class="emergencyA" method="delete">
+			<result name="hasDelete">/admin/管理员功能.jsp</result> 
+		</action>
+		<action name="ctemp" class="emergencyA" method="findall">
+			<result name="hasFindAll">/emergency/旅游应急.jsp</result> 
+		</action>
+		
+		
+		<!--酒店表动作-->
+		<action name="hotelregister" class="hotelA" method="add">
+			<result name="hasAdd">/hotel/酒店功能.jsp</result>
+		</action>
+		<action name="hotellogin" class="hotelA" method="isRegister">
+			<result name="rightAccount">/hotel/酒店功能.jsp </result>
+			<result name="wrongAccount">/hotel/酒店登陆.jsp</result>
+		</action>
+		<action name="change" class="hotelA" method="change">
+			<result name="hasChange">/admin/管理员功能.jsp</result> 
+		</action>
+		<action name="changecost" class="hotelA" method="changecost">
+			<result name="hasChangeCost">/hotel/酒店功能.jsp</result> 
+		</action>
+		<action name="changenum" class="hotelA" method="changenum">
+			<result name="hasChangeNum">/hotel/酒店功能.jsp</result> 
+		</action>
+		<action name="findallhotelispass" class="hotelA" method="findallispass">
+			<result name="hasFindAllIsPass">/tourist/酒店显示.jsp</result> 
+		</action>
+		<action name="list" class="hotelA" method="findall">
+			<result name="hasFindAll">/hotel/酒店预订.jsp</result> 
+		</action>
+		<action name="findallhotelisnotpass" class="hotelA" method="findallisnotpass">
+			<result name="hasFindAllIsNotPass">/hotel/酒店预订.jsp</result> 
+		</action>
+		<action name="hoteldelete" class="hotelA" method="delete">
+			<result name="hasDelete">/admin/管理员功能.jsp</result> 
+		</action>
+		<action name="changemy" class="hotelA" method="changemy">
+			<result name="hasChangeMy">/hotel/酒店功能.jsp</result> 
+		</action>
+		<action name="registertemp" class="hotelA" method="registertemp">
+			<result name="success">/hotel/酒店注册.jsp</result> 
+		</action>
+
+	</package>
+</struts>    
