@@ -7619,7 +7619,7 @@
 						ShowCompartmentStereotypes 	TRUE
 						IncludeAttribute 	TRUE
 						IncludeOperation 	TRUE
-						location   	(640, 416)
+						location   	(400, 288)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -7631,7 +7631,7 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@323
-						    location   	(639, 577)
+						    location   	(399, 449)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	438
@@ -7949,23 +7949,6 @@
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5B640AE30103"
-						compartment 	(object Compartment
-						    Parent_View 	@324
-						    location   	(108, 755)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    icon_style 	"Icon"
-						    anchor     	2
-						    nlines     	5
-						    max_width  	644
-						    justify    	0)
 						height     	154
 						annotation 	8
 						autoResize 	TRUE)
@@ -7996,23 +7979,6 @@
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5B640AD402C5"
-						compartment 	(object Compartment
-						    Parent_View 	@325
-						    location   	(937, 627)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    icon_style 	"Icon"
-						    anchor     	2
-						    nlines     	6
-						    max_width  	650
-						    justify    	0)
 						height     	154
 						annotation 	8
 						autoResize 	TRUE)
@@ -8043,23 +8009,6 @@
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5B640ACB03E3"
-						compartment 	(object Compartment
-						    Parent_View 	@326
-						    location   	(59, 1379)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    icon_style 	"Icon"
-						    anchor     	2
-						    nlines     	6
-						    max_width  	678
-						    justify    	0)
 						height     	154
 						annotation 	8
 						autoResize 	TRUE)
@@ -8090,23 +8039,6 @@
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5B640AB7034C"
-						compartment 	(object Compartment
-						    Parent_View 	@327
-						    location   	(964, 1395)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    icon_style 	"Icon"
-						    anchor     	2
-						    nlines     	6
-						    max_width  	631
-						    justify    	0)
 						height     	154
 						annotation 	8
 						autoResize 	TRUE)
@@ -8137,23 +8069,6 @@
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5B640AEE021A"
-						compartment 	(object Compartment
-						    Parent_View 	@328
-						    location   	(1709, 627)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    icon_style 	"Icon"
-						    anchor     	2
-						    nlines     	6
-						    max_width  	613
-						    justify    	0)
 						height     	154
 						annotation 	8
 						autoResize 	TRUE)
@@ -8184,23 +8099,6 @@
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5B640ADB0359"
-						compartment 	(object Compartment
-						    Parent_View 	@329
-						    location   	(1772, 1411)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    icon_style 	"Icon"
-						    anchor     	2
-						    nlines     	5
-						    max_width  	644
-						    justify    	0)
 						height     	154
 						annotation 	8
 						autoResize 	TRUE)
@@ -8231,23 +8129,6 @@
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5B63C281024B"
-						compartment 	(object Compartment
-						    Parent_View 	@330
-						    location   	(2511, 659)
-						    font       	(object Font
-							size       	9
-							face       	"Arial"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    icon_style 	"Icon"
-						    anchor     	2
-						    nlines     	20
-						    max_width  	731
-						    justify    	0)
 						height     	154
 						annotation 	8
 						autoResize 	TRUE)))))
@@ -8516,6 +8397,7 @@
 							quidu      	"5B63BC2A0228")))
 					    (object Class "MyInfoDAO"
 						quid       	"5B63BCEA03C7"
+						stereotype 	"entity"
 						used_nodes 	(list uses_relationship_list
 						    (object Uses_Relationship
 							quid       	"5B63C3B000B0"
@@ -8757,6 +8639,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C281024B"
+									compartment 	(object Compartment
+									    Parent_View 	@342
+									    location   	(2367, 1373)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	20
+									    max_width  	731
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -8868,18 +8767,18 @@
 									    default_color 	TRUE)
 									label      	(object ItemLabel
 									    Parent_View 	@346
-									    location   	(1960, 1081)
-									    fill_color 	13434879
-									    nlines     	1
-									    max_width  	240
+									    location   	(2080, 1308)
+									    anchor_loc 	1
+									    nlines     	2
+									    max_width  	430
 									    justify    	0
 									    label      	"MyInfoDAO")
+									icon       	"entity"
 									icon_style 	"Icon"
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63BCEA03C7"
-									width      	258
-									height     	164
+									height     	154
 									annotation 	8
 									autoResize 	TRUE)
 								    (object UsesView "" @347
@@ -8889,8 +8788,8 @@
 									client     	@345
 									supplier   	@346
 									vertices   	(list Points
-									    (1717, 739)
-									    (2007, 1069))
+									    (1737, 762)
+									    (2012, 1076))
 									line_style 	0)
 								    (object UsesView "" @348
 									stereotype 	TRUE
@@ -8909,7 +8808,7 @@
 									client     	@346
 									supplier   	@342
 									vertices   	(list Points
-									    (2209, 1148)
+									    (2154, 1148)
 									    (2676, 1135))
 									line_style 	0)
 								    (object UsesView "" @350
@@ -8919,7 +8818,7 @@
 									client     	@346
 									supplier   	@345
 									vertices   	(list Points
-									    (2070, 1069)
+									    (2070, 1076)
 									    (2031, 703)
 									    (1658, 641))
 									line_style 	0)
@@ -8932,7 +8831,7 @@
 									vertices   	(list Points
 									    (1180, 1107)
 									    (1487, 1072)
-									    (1583, 795))
+									    (1590, 771))
 									line_style 	0)
 								    (object UsesView "" @352
 									stereotype 	TRUE
@@ -9126,7 +9025,7 @@
 									    y_coord    	0
 									    Nested     	FALSE))
 								    (object InterObjView "$UNNAMED$156" @367
-									location   	(1616, 224)
+									location   	(1616, 225)
 									font       	(object Font
 									    size       	9
 									    face       	"Arial"
@@ -9138,7 +9037,7 @@
 									    default_color 	TRUE)
 									label      	(object ItemLabel
 									    Parent_View 	@367
-									    location   	(1616, 224)
+									    location   	(1616, 225)
 									    fill_color 	13434879
 									    anchor_loc 	1
 									    nlines     	2
@@ -9151,7 +9050,7 @@
 									fill_color 	13434879
 									quidu      	"5B63BCC901D4"
 									width      	344
-									height     	1428
+									height     	1427
 									icon_height 	0
 									icon_width 	0
 									icon_y_offset 	0
@@ -9171,7 +9070,7 @@
 									    y_coord    	-89
 									    Nested     	TRUE))
 								    (object InterObjView "$UNNAMED$157" @370
-									location   	(2096, 225)
+									location   	(2096, 224)
 									font       	(object Font
 									    size       	9
 									    face       	"Arial"
@@ -9183,21 +9082,21 @@
 									    default_color 	TRUE)
 									label      	(object ItemLabel
 									    Parent_View 	@370
-									    location   	(2096, 224)
-									    fill_color 	13434879
+									    location   	(2096, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	282
+									    max_width  	426
 									    justify    	0
 									    label      	"")
+									icon       	"entity"
 									icon_style 	"Icon"
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63BD16031D"
-									width      	300
-									height     	1427
-									icon_height 	141
-									icon_width 	142
+									width      	154
+									height     	1428
+									icon_height 	153
+									icon_width 	154
 									icon_y_offset 	0
 									annotation 	1
 									Focus_Of_Control 	(object Focus_Of_Control "" @371
@@ -9939,6 +9838,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C281024B"
+									compartment 	(object Compartment
+									    Parent_View 	@399
+									    location   	(2367, 1373)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	20
+									    max_width  	731
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -10050,18 +9966,18 @@
 									    default_color 	TRUE)
 									label      	(object ItemLabel
 									    Parent_View 	@403
-									    location   	(1960, 1081)
-									    fill_color 	13434879
-									    nlines     	1
-									    max_width  	240
+									    location   	(2080, 1308)
+									    anchor_loc 	1
+									    nlines     	2
+									    max_width  	435
 									    justify    	0
 									    label      	"MyInfoDAO")
+									icon       	"entity"
 									icon_style 	"Icon"
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63BCEA03C7"
-									width      	258
-									height     	164
+									height     	154
 									annotation 	8
 									autoResize 	TRUE)
 								    (object UsesView "" @404
@@ -10094,7 +10010,7 @@
 									vertices   	(list Points
 									    (1180, 1107)
 									    (1487, 1072)
-									    (1583, 795))
+									    (1590, 771))
 									line_style 	0)
 								    (object UsesView "" @407
 									stereotype 	TRUE
@@ -10113,8 +10029,8 @@
 									client     	@402
 									supplier   	@403
 									vertices   	(list Points
-									    (1717, 739)
-									    (2007, 1069))
+									    (1753, 779)
+									    (2012, 1076))
 									line_style 	0)
 								    (object UsesView "" @409
 									stereotype 	TRUE
@@ -10123,7 +10039,7 @@
 									client     	@403
 									supplier   	@399
 									vertices   	(list Points
-									    (2209, 1148)
+									    (2154, 1148)
 									    (2676, 1135))
 									line_style 	0)
 								    (object UsesView "" @410
@@ -10133,7 +10049,7 @@
 									client     	@403
 									supplier   	@402
 									vertices   	(list Points
-									    (2070, 1069)
+									    (2070, 1076)
 									    (2031, 703)
 									    (1658, 641))
 									line_style 	0)))
@@ -10330,7 +10246,7 @@
 									    location   	(1536, 280)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	313
+									    max_width  	309
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -10338,7 +10254,7 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C4B400B4"
-									width      	308
+									width      	57
 									height     	1524
 									icon_height 	57
 									icon_width 	57
@@ -10366,7 +10282,7 @@
 									    y_coord    	14
 									    Nested     	FALSE))
 								    (object InterObjView "$UNNAMED$163" @429
-									location   	(1968, 225)
+									location   	(1968, 224)
 									font       	(object Font
 									    size       	9
 									    face       	"Arial"
@@ -10378,21 +10294,21 @@
 									    default_color 	TRUE)
 									label      	(object ItemLabel
 									    Parent_View 	@429
-									    location   	(1968, 224)
-									    fill_color 	13434879
+									    location   	(1968, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	282
+									    max_width  	426
 									    justify    	0
 									    label      	"")
+									icon       	"entity"
 									icon_style 	"Icon"
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C4B80336"
-									width      	300
-									height     	1555
-									icon_height 	0
-									icon_width 	0
+									width      	154
+									height     	1556
+									icon_height 	153
+									icon_width 	154
 									icon_y_offset 	0
 									annotation 	1
 									Focus_Of_Control 	(object Focus_Of_Control "" @430
@@ -11252,18 +11168,18 @@
 									    default_color 	TRUE)
 									label      	(object ItemLabel
 									    Parent_View 	@463
-									    location   	(1960, 1081)
-									    fill_color 	13434879
-									    nlines     	1
-									    max_width  	240
+									    location   	(2080, 1308)
+									    anchor_loc 	1
+									    nlines     	2
+									    max_width  	442
 									    justify    	0
 									    label      	"MyInfoDAO")
+									icon       	"entity"
 									icon_style 	"Icon"
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63BCEA03C7"
-									width      	258
-									height     	164
+									height     	154
 									annotation 	8
 									autoResize 	TRUE)
 								    (object UsesView "" @464
@@ -11296,7 +11212,7 @@
 									vertices   	(list Points
 									    (1180, 1107)
 									    (1487, 1072)
-									    (1583, 795))
+									    (1590, 771))
 									line_style 	0)
 								    (object UsesView "" @467
 									stereotype 	TRUE
@@ -11316,7 +11232,7 @@
 									supplier   	@463
 									vertices   	(list Points
 									    (1717, 739)
-									    (2007, 1069))
+									    (2012, 1076))
 									line_style 	0)
 								    (object UsesView "" @469
 									stereotype 	TRUE
@@ -11325,7 +11241,7 @@
 									client     	@463
 									supplier   	@459
 									vertices   	(list Points
-									    (2209, 1148)
+									    (2154, 1148)
 									    (2676, 1135))
 									line_style 	0)
 								    (object UsesView "" @470
@@ -11335,7 +11251,7 @@
 									client     	@463
 									supplier   	@462
 									vertices   	(list Points
-									    (2070, 1069)
+									    (2070, 1076)
 									    (2031, 703)
 									    (1658, 641))
 									line_style 	0)))
@@ -11553,7 +11469,7 @@
 									    location   	(1536, 280)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	313
+									    max_width  	309
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -11561,7 +11477,7 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C66A019E"
-									width      	324
+									width      	57
 									height     	1488
 									icon_height 	57
 									icon_width 	57
@@ -11589,7 +11505,7 @@
 									    y_coord    	15
 									    Nested     	FALSE))
 								    (object InterObjView "$UNNAMED$169" @492
-									location   	(1968, 225)
+									location   	(1968, 224)
 									font       	(object Font
 									    size       	9
 									    face       	"Arial"
@@ -11601,21 +11517,21 @@
 									    default_color 	TRUE)
 									label      	(object ItemLabel
 									    Parent_View 	@492
-									    location   	(1968, 224)
-									    fill_color 	13434879
+									    location   	(1968, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	282
+									    max_width  	426
 									    justify    	0
 									    label      	"")
+									icon       	"entity"
 									icon_style 	"Icon"
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C66A01A3"
-									width      	300
-									height     	1519
-									icon_height 	0
-									icon_width 	0
+									width      	154
+									height     	1520
+									icon_height 	153
+									icon_width 	154
 									icon_y_offset 	0
 									annotation 	1
 									Focus_Of_Control 	(object Focus_Of_Control "" @493
@@ -12581,6 +12497,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C281024B"
+									compartment 	(object Compartment
+									    Parent_View 	@526
+									    location   	(1983, 989)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	20
+									    max_width  	731
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -12772,7 +12705,7 @@
 									    location   	(560, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	181
+									    max_width  	687
 									    justify    	0
 									    label      	"")
 									icon       	"boundary"
@@ -13071,7 +13004,7 @@
 									fill_color 	13434879
 									quidu      	"5B640612006D"
 									width      	229
-									height     	1675
+									height     	1674
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -13170,7 +13103,7 @@
 									ordinal    	1)
 								    (object Destruction_Marker @571
 									Parent_View 	@564
-									location   	(2704, 1899)
+									location   	(2704, 1898)
 									line_color 	3342489
 									fill_color 	13434879)
 								    (object InterMessView "Login()" @572
@@ -14069,7 +14002,7 @@
 									supplier   	@601
 									vertices   	(list Points
 									    (1242, 1097)
-									    (1730, 740))
+									    (1677, 783))
 									line_style 	0)
 								    (object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::会员中心::个人账户管理::MyInfo.jsp" @603
 									ShowCompartmentStereotypes 	TRUE
@@ -14129,6 +14062,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C281024B"
+									compartment 	(object Compartment
+									    Parent_View 	@604
+									    location   	(1967, 1469)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	20
+									    max_width  	731
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -14159,7 +14109,7 @@
 									client     	@599
 									supplier   	@600
 									vertices   	(list Points
-									    (949, 782)
+									    (999, 847)
 									    (1192, 1091))
 									line_style 	0)
 								    (object UsesView "" @608
@@ -14201,8 +14151,8 @@
 									client     	@601
 									supplier   	@600
 									vertices   	(list Points
-									    (1788, 867)
-									    (1771, 1106)
+									    (1786, 907)
+									    (1772, 1106)
 									    (1242, 1115))
 									line_style 	0)))
 							    (object InteractionDiagram "时序图"
@@ -15255,6 +15205,7 @@
 						stereotype 	"boundary")
 					    (object Class "CommentDAO"
 						quid       	"5B640A4B0193"
+						stereotype 	"entity"
 						used_nodes 	(list uses_relationship_list
 						    (object Uses_Relationship
 							quid       	"5B6415E802D1"
@@ -15572,18 +15523,18 @@
 								    default_color 	TRUE)
 								label      	(object ItemLabel
 								    Parent_View 	@677
-								    location   	(1605, 960)
-								    fill_color 	13434879
-								    nlines     	1
-								    max_width  	278
+								    location   	(1744, 1164)
+								    anchor_loc 	1
+								    nlines     	2
+								    max_width  	430
 								    justify    	0
 								    label      	"CommentDAO")
+								icon       	"entity"
 								icon_style 	"Icon"
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640A4B0193"
-								width      	296
-								height     	118
+								height     	154
 								annotation 	8
 								autoResize 	TRUE)
 							    (object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::会员中心::商家点评::CommentSuccess.jsp" @678
@@ -15644,6 +15595,23 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640ACB03E3"
+								compartment 	(object Compartment
+								    Parent_View 	@679
+								    location   	(2011, 1197)
+								    font       	(object Font
+									size       	9
+									face       	"Arial"
+									bold       	FALSE
+									italics    	FALSE
+									underline  	FALSE
+									strike     	FALSE
+									color      	0
+									default_color 	TRUE)
+								    icon_style 	"Icon"
+								    anchor     	2
+								    nlines     	6
+								    max_width  	678
+								    justify    	0)
 								height     	154
 								annotation 	8
 								autoResize 	TRUE)
@@ -15664,7 +15632,7 @@
 								client     	@675
 								supplier   	@676
 								vertices   	(list Points
-								    (1033, 1015)
+								    (949, 925)
 								    (1207, 1204))
 								line_style 	0)
 							    (object UsesView "" @682
@@ -15675,7 +15643,7 @@
 								supplier   	@677
 								vertices   	(list Points
 								    (1258, 1217)
-								    (1608, 1067))
+								    (1667, 1038))
 								line_style 	0)
 							    (object UsesView "" @683
 								stereotype 	TRUE
@@ -15684,7 +15652,7 @@
 								client     	@677
 								supplier   	@679
 								vertices   	(list Points
-								    (1892, 996)
+								    (1818, 1000)
 								    (2290, 962))
 								line_style 	0)
 							    (object UsesView "" @684
@@ -15694,9 +15662,9 @@
 								client     	@677
 								supplier   	@676
 								vertices   	(list Points
-								    (1711, 1067)
+								    (1652, 1187)
 								    (1588, 1309)
-								    (1425, 1271))
+								    (1417, 1270))
 								line_style 	0)
 							    (object UsesView "" @685
 								stereotype 	TRUE
@@ -15765,7 +15733,7 @@
 								fill_color 	13434879
 								quidu      	"5B640A9F0060"
 								width      	120
-								height     	1313
+								height     	1312
 								icon_height 	162
 								icon_width 	120
 								icon_y_offset 	0
@@ -15846,7 +15814,7 @@
 								fill_color 	13434879
 								quidu      	"5B640AAD0327"
 								width      	157
-								height     	1345
+								height     	1344
 								icon_height 	164
 								icon_width 	157
 								icon_y_offset 	0
@@ -15881,7 +15849,7 @@
 								    location   	(1360, 248)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	373
+								    max_width  	369
 								    justify    	0
 								    label      	"")
 								icon       	"Interface"
@@ -15889,8 +15857,8 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640AAF01C6"
-								width      	384
-								height     	1345
+								width      	57
+								height     	1344
 								icon_height 	57
 								icon_width 	57
 								icon_y_offset 	0
@@ -15922,21 +15890,21 @@
 								    default_color 	TRUE)
 								label      	(object ItemLabel
 								    Parent_View 	@699
-								    location   	(1760, 224)
-								    fill_color 	13434879
+								    location   	(1760, 248)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	282
+								    max_width  	426
 								    justify    	0
 								    label      	"")
+								icon       	"entity"
 								icon_style 	"Icon"
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640AB2009E"
-								width      	300
-								height     	1345
-								icon_height 	0
-								icon_width 	0
+								width      	154
+								height     	1344
+								icon_height 	153
+								icon_width 	154
 								icon_y_offset 	0
 								annotation 	1
 								Focus_Of_Control 	(object Focus_Of_Control "" @700
@@ -15978,7 +15946,7 @@
 								fill_color 	13434879
 								quidu      	"5B640B7901FF"
 								width      	154
-								height     	1297
+								height     	1296
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -16015,7 +15983,7 @@
 								fill_color 	13434879
 								quidu      	"5B640B820100"
 								width      	229
-								height     	1345
+								height     	1344
 								icon_height 	153
 								icon_width 	229
 								icon_y_offset 	0
@@ -16034,7 +16002,7 @@
 								fill_color 	13434879)
 							    (object Destruction_Marker @707
 								Parent_View 	@704
-								location   	(2608, 1569)
+								location   	(2608, 1568)
 								line_color 	3342489
 								fill_color 	13434879)
 							    (object InterMessView "Comment()" @708
@@ -16875,6 +16843,23 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640ACB03E3"
+								compartment 	(object Compartment
+								    Parent_View 	@736
+								    location   	(2379, 1549)
+								    font       	(object Font
+									size       	9
+									face       	"Arial"
+									bold       	FALSE
+									italics    	FALSE
+									underline  	FALSE
+									strike     	FALSE
+									color      	0
+									default_color 	TRUE)
+								    icon_style 	"Icon"
+								    anchor     	2
+								    nlines     	6
+								    max_width  	678
+								    justify    	0)
 								height     	154
 								annotation 	8
 								autoResize 	TRUE)
@@ -16895,7 +16880,7 @@
 								client     	@733
 								supplier   	@734
 								vertices   	(list Points
-								    (1275, 836)
+								    (1196, 784)
 								    (1732, 1132))
 								line_style 	0)
 							    (object UsesView "" @739
@@ -16986,7 +16971,7 @@
 								fill_color 	13434879
 								quidu      	"5B64178B00EA"
 								width      	120
-								height     	1179
+								height     	1178
 								icon_height 	162
 								icon_width 	120
 								icon_y_offset 	0
@@ -17023,7 +17008,7 @@
 								fill_color 	13434879
 								quidu      	"5B6418C302E8"
 								width      	229
-								height     	1195
+								height     	1194
 								icon_height 	153
 								icon_width 	229
 								icon_y_offset 	0
@@ -17067,7 +17052,7 @@
 								fill_color 	13434879
 								quidu      	"5B6418C50132"
 								width      	157
-								height     	1195
+								height     	1194
 								icon_height 	164
 								icon_width 	157
 								icon_y_offset 	0
@@ -17102,7 +17087,7 @@
 								    location   	(1392, 248)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	356
+								    max_width  	345
 								    justify    	0
 								    label      	"")
 								icon       	"Interface"
@@ -17110,8 +17095,8 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B6418C700F2"
-								width      	368
-								height     	1195
+								width      	57
+								height     	1194
 								icon_height 	57
 								icon_width 	57
 								icon_y_offset 	0
@@ -17155,7 +17140,7 @@
 								fill_color 	13434879
 								quidu      	"5B6418C90342"
 								width      	154
-								height     	1195
+								height     	1194
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -17199,7 +17184,7 @@
 								fill_color 	13434879
 								quidu      	"5B6418D00359"
 								width      	154
-								height     	1195
+								height     	1194
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -17573,7 +17558,7 @@
 								ordinal    	8)
 							    (object Destruction_Marker @778
 								Parent_View 	@746
-								location   	(640, 1419)
+								location   	(640, 1418)
 								line_color 	3342489
 								fill_color 	13434879))))))
 					logical_presentations 	(list unit_reference_list
@@ -18019,6 +18004,23 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640AD402C5"
+								compartment 	(object Compartment
+								    Parent_View 	@787
+								    location   	(2217, 1165)
+								    font       	(object Font
+									size       	9
+									face       	"Arial"
+									bold       	FALSE
+									italics    	FALSE
+									underline  	FALSE
+									strike     	FALSE
+									color      	0
+									default_color 	TRUE)
+								    icon_style 	"Icon"
+								    anchor     	2
+								    nlines     	6
+								    max_width  	650
+								    justify    	0)
 								height     	154
 								annotation 	8
 								autoResize 	TRUE)
@@ -18058,7 +18060,7 @@
 								client     	@785
 								supplier   	@786
 								vertices   	(list Points
-								    (1047, 880)
+								    (933, 761)
 								    (1221, 1059))
 								line_style 	0)
 							    (object UsesView "" @791
@@ -18149,7 +18151,7 @@
 								fill_color 	13434879
 								quidu      	"5B6800140066"
 								width      	120
-								height     	1164
+								height     	1163
 								icon_height 	162
 								icon_width 	120
 								icon_y_offset 	0
@@ -18186,7 +18188,7 @@
 								fill_color 	13434879
 								quidu      	"5B68002900DF"
 								width      	229
-								height     	1212
+								height     	1211
 								icon_height 	153
 								icon_width 	229
 								icon_y_offset 	0
@@ -18230,7 +18232,7 @@
 								fill_color 	13434879
 								quidu      	"5B68002E00C7"
 								width      	157
-								height     	1212
+								height     	1211
 								icon_height 	164
 								icon_width 	157
 								icon_y_offset 	0
@@ -18265,7 +18267,7 @@
 								    location   	(1792, 248)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	584
+								    max_width  	583
 								    justify    	0
 								    label      	"")
 								icon       	"Interface"
@@ -18273,8 +18275,8 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B6800340137"
-								width      	572
-								height     	1212
+								width      	57
+								height     	1211
 								icon_height 	57
 								icon_width 	57
 								icon_y_offset 	0
@@ -18318,7 +18320,7 @@
 								fill_color 	13434879
 								quidu      	"5B6800470267"
 								width      	154
-								height     	1212
+								height     	1211
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -18362,7 +18364,7 @@
 								fill_color 	13434879
 								quidu      	"5B68002101AF"
 								width      	154
-								height     	1164
+								height     	1163
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -18736,7 +18738,7 @@
 								ordinal    	8)
 							    (object Destruction_Marker @830
 								Parent_View 	@798
-								location   	(624, 1436)
+								location   	(624, 1435)
 								line_color 	3342489
 								fill_color 	13434879))))))
 					logical_presentations 	(list unit_reference_list
@@ -19123,7 +19125,7 @@
 								ShowCompartmentStereotypes 	TRUE
 								IncludeAttribute 	TRUE
 								IncludeOperation 	TRUE
-								location   	(1648, 1152)
+								location   	(1664, 1152)
 								font       	(object Font
 								    size       	9
 								    face       	"Arial"
@@ -19135,7 +19137,7 @@
 								    default_color 	TRUE)
 								label      	(object ItemLabel
 								    Parent_View 	@838
-								    location   	(1647, 1260)
+								    location   	(1663, 1260)
 								    anchor_loc 	1
 								    nlines     	1
 								    max_width  	508
@@ -19177,6 +19179,23 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640AD402C5"
+								compartment 	(object Compartment
+								    Parent_View 	@839
+								    location   	(2521, 1357)
+								    font       	(object Font
+									size       	9
+									face       	"Arial"
+									bold       	FALSE
+									italics    	FALSE
+									underline  	FALSE
+									strike     	FALSE
+									color      	0
+									default_color 	TRUE)
+								    icon_style 	"Icon"
+								    anchor     	2
+								    nlines     	6
+								    max_width  	650
+								    justify    	0)
 								height     	154
 								annotation 	8
 								autoResize 	TRUE)
@@ -19197,8 +19216,8 @@
 								client     	@835
 								supplier   	@838
 								vertices   	(list Points
-								    (1360, 842)
-								    (1619, 1122))
+								    (1360, 837)
+								    (1635, 1122))
 								line_style 	0)
 							    (object UsesView "" @842
 								stereotype 	TRUE
@@ -19207,8 +19226,8 @@
 								client     	@838
 								supplier   	@837
 								vertices   	(list Points
-								    (1674, 1127)
-								    (2029, 840))
+								    (1690, 1125)
+								    (2033, 840))
 								line_style 	0)
 							    (object UsesView "" @843
 								stereotype 	TRUE
@@ -19249,7 +19268,7 @@
 								vertices   	(list Points
 								    (2177, 635)
 								    (1809, 547)
-								    (1652, 1123))
+								    (1668, 1123))
 								line_style 	0)
 							    (object UsesView "" @846
 								stereotype 	TRUE
@@ -19258,7 +19277,7 @@
 								client     	@838
 								supplier   	@835
 								vertices   	(list Points
-								    (1643, 1123)
+								    (1659, 1123)
 								    (1628, 544)
 								    (1290, 657))
 								line_style 	0)
@@ -19308,7 +19327,7 @@
 								fill_color 	13434879
 								quidu      	"5B641C630233"
 								width      	120
-								height     	1195
+								height     	1194
 								icon_height 	162
 								icon_width 	120
 								icon_y_offset 	0
@@ -19345,7 +19364,7 @@
 								fill_color 	13434879
 								quidu      	"5B641C6B01FB"
 								width      	229
-								height     	1195
+								height     	1194
 								icon_height 	153
 								icon_width 	229
 								icon_y_offset 	0
@@ -19389,7 +19408,7 @@
 								fill_color 	13434879
 								quidu      	"5B641C90023B"
 								width      	157
-								height     	1195
+								height     	1194
 								icon_height 	164
 								icon_width 	157
 								icon_y_offset 	0
@@ -19424,7 +19443,7 @@
 								    location   	(1616, 248)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	507
+								    max_width  	519
 								    justify    	0
 								    label      	"")
 								icon       	"Interface"
@@ -19432,8 +19451,8 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B641C9200BA"
-								width      	518
-								height     	1195
+								width      	57
+								height     	1194
 								icon_height 	57
 								icon_width 	57
 								icon_y_offset 	0
@@ -19477,7 +19496,7 @@
 								fill_color 	13434879
 								quidu      	"5B641C98035B"
 								width      	154
-								height     	1195
+								height     	1194
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -19521,7 +19540,7 @@
 								fill_color 	13434879
 								quidu      	"5B641C9D0362"
 								width      	154
-								height     	1195
+								height     	1194
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -19895,7 +19914,7 @@
 								ordinal    	8)
 							    (object Destruction_Marker @882
 								Parent_View 	@850
-								location   	(576, 1419)
+								location   	(576, 1418)
 								line_color 	3342489
 								fill_color 	13434879))))))
 					logical_presentations 	(list unit_reference_list
@@ -20336,6 +20355,23 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640AD402C5"
+								compartment 	(object Compartment
+								    Parent_View 	@891
+								    location   	(2297, 1709)
+								    font       	(object Font
+									size       	9
+									face       	"Arial"
+									bold       	FALSE
+									italics    	FALSE
+									underline  	FALSE
+									strike     	FALSE
+									color      	0
+									default_color 	TRUE)
+								    icon_style 	"Icon"
+								    anchor     	2
+								    nlines     	6
+								    max_width  	650
+								    justify    	0)
 								height     	154
 								annotation 	8
 								autoResize 	TRUE)
@@ -20356,7 +20392,7 @@
 								client     	@888
 								supplier   	@889
 								vertices   	(list Points
-								    (1263, 923)
+								    (1221, 882)
 								    (1636, 1285))
 								line_style 	0)
 							    (object UsesView "" @894
@@ -20408,7 +20444,7 @@
 								supplier   	@890
 								vertices   	(list Points
 								    (1687, 1283)
-								    (2044, 958))
+								    (2041, 961))
 								line_style 	0)
 							    (object UsesView "" @898
 								stereotype 	TRUE
@@ -20568,7 +20604,7 @@
 								    y_coord    	-89
 								    Nested     	TRUE))
 							    (object InterObjView "$UNNAMED$213" @908
-								location   	(1280, 224)
+								location   	(1280, 225)
 								font       	(object Font
 								    size       	9
 								    face       	"Arial"
@@ -20580,7 +20616,7 @@
 								    default_color 	TRUE)
 								label      	(object ItemLabel
 								    Parent_View 	@908
-								    location   	(1280, 224)
+								    location   	(1280, 225)
 								    fill_color 	13434879
 								    anchor_loc 	1
 								    nlines     	2
@@ -20593,7 +20629,7 @@
 								fill_color 	13434879
 								quidu      	"5B67ACA0005F"
 								width      	326
-								height     	1168
+								height     	1167
 								icon_height 	0
 								icon_width 	0
 								icon_y_offset 	0
@@ -21385,6 +21421,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640ADB0359"
+									compartment 	(object Compartment
+									    Parent_View 	@939
+									    location   	(2124, 1325)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	5
+									    max_width  	644
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -21762,7 +21815,7 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B694F65032F"
-									width      	336
+									width      	57
 									height     	1168
 									icon_height 	57
 									icon_width 	57
@@ -22549,6 +22602,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640ADB0359"
+									compartment 	(object Compartment
+									    Parent_View 	@991
+									    location   	(2252, 1293)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	5
+									    max_width  	644
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -22918,7 +22988,7 @@
 									    location   	(1728, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	470
+									    max_width  	474
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -22926,7 +22996,7 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6961E70108"
-									width      	482
+									width      	57
 									height     	1168
 									icon_height 	57
 									icon_width 	57
@@ -23708,6 +23778,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640ADB0359"
+									compartment 	(object Compartment
+									    Parent_View 	@1043
+									    location   	(2268, 1165)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	5
+									    max_width  	644
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -23961,7 +24048,7 @@
 									fill_color 	13434879
 									quidu      	"5B695FCC00C3"
 									width      	120
-									height     	1181
+									height     	1180
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -23998,7 +24085,7 @@
 									fill_color 	13434879
 									quidu      	"5B69638A01EF"
 									width      	229
-									height     	1181
+									height     	1180
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -24042,7 +24129,7 @@
 									fill_color 	13434879
 									quidu      	"5B69638B03A2"
 									width      	157
-									height     	1181
+									height     	1180
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -24077,7 +24164,7 @@
 									    location   	(1824, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	466
+									    max_width  	465
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -24085,8 +24172,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6963910286"
-									width      	478
-									height     	1181
+									width      	57
+									height     	1180
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -24130,7 +24217,7 @@
 									fill_color 	13434879
 									quidu      	"5B69638F0308"
 									width      	154
-									height     	1181
+									height     	1180
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -24174,7 +24261,7 @@
 									fill_color 	13434879
 									quidu      	"5B695FD1014A"
 									width      	154
-									height     	1181
+									height     	1180
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -24548,7 +24635,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1090
 									Parent_View 	@1058
-									location   	(752, 1405)
+									location   	(752, 1404)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -24867,6 +24954,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640ADB0359"
+									compartment 	(object Compartment
+									    Parent_View 	@1095
+									    location   	(2172, 1357)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	5
+									    max_width  	644
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -25120,7 +25224,7 @@
 									fill_color 	13434879
 									quidu      	"5B6960120112"
 									width      	120
-									height     	1165
+									height     	1164
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -25157,7 +25261,7 @@
 									fill_color 	13434879
 									quidu      	"5B69663E01B9"
 									width      	229
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -25201,7 +25305,7 @@
 									fill_color 	13434879
 									quidu      	"5B6966400346"
 									width      	157
-									height     	1165
+									height     	1164
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -25236,7 +25340,7 @@
 									    location   	(1712, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	502
+									    max_width  	497
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -25244,8 +25348,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6966440254"
-									width      	514
-									height     	1165
+									width      	57
+									height     	1164
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -25289,7 +25393,7 @@
 									fill_color 	13434879
 									quidu      	"5B69664202E2"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -25333,7 +25437,7 @@
 									fill_color 	13434879
 									quidu      	"5B6960170041"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -25707,7 +25811,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1142
 									Parent_View 	@1110
-									location   	(592, 1389)
+									location   	(592, 1388)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -26026,6 +26130,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640ADB0359"
+									compartment 	(object Compartment
+									    Parent_View 	@1147
+									    location   	(2156, 1277)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	5
+									    max_width  	644
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -26395,7 +26516,7 @@
 									    location   	(1712, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	544
+									    max_width  	541
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -26403,7 +26524,7 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6964B80206"
-									width      	556
+									width      	57
 									height     	1168
 									icon_height 	57
 									icon_width 	57
@@ -27190,6 +27311,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C281024B"
+									compartment 	(object Compartment
+									    Parent_View 	@1199
+									    location   	(2367, 1261)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	20
+									    max_width  	731
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -27443,7 +27581,7 @@
 									fill_color 	13434879
 									quidu      	"5B69533101F8"
 									width      	120
-									height     	1197
+									height     	1196
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -27480,7 +27618,7 @@
 									fill_color 	13434879
 									quidu      	"5B6953C5011B"
 									width      	229
-									height     	1293
+									height     	1292
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -27524,7 +27662,7 @@
 									fill_color 	13434879
 									quidu      	"5B6953C603AA"
 									width      	157
-									height     	1293
+									height     	1292
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -27559,7 +27697,7 @@
 									    location   	(1632, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	364
+									    max_width  	361
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -27567,8 +27705,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6953CB0244"
-									width      	376
-									height     	1293
+									width      	57
+									height     	1292
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -27612,7 +27750,7 @@
 									fill_color 	13434879
 									quidu      	"5B6953C90258"
 									width      	154
-									height     	1293
+									height     	1292
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -27656,7 +27794,7 @@
 									fill_color 	13434879
 									quidu      	"5B69532D012A"
 									width      	154
-									height     	1293
+									height     	1292
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -28030,7 +28168,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1246
 									Parent_View 	@1214
-									location   	(720, 1517)
+									location   	(720, 1516)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -28349,6 +28487,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C281024B"
+									compartment 	(object Compartment
+									    Parent_View 	@1251
+									    location   	(2207, 1341)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	20
+									    max_width  	731
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -28602,7 +28757,7 @@
 									fill_color 	13434879
 									quidu      	"5B6954C4001E"
 									width      	120
-									height     	1293
+									height     	1292
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -28639,7 +28794,7 @@
 									fill_color 	13434879
 									quidu      	"5B69557F012C"
 									width      	229
-									height     	1293
+									height     	1292
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -28683,7 +28838,7 @@
 									fill_color 	13434879
 									quidu      	"5B695581027D"
 									width      	157
-									height     	1293
+									height     	1292
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -28726,8 +28881,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B695583024C"
-									width      	448
-									height     	1293
+									width      	57
+									height     	1292
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -28771,7 +28926,7 @@
 									fill_color 	13434879
 									quidu      	"5B6955850051"
 									width      	154
-									height     	1293
+									height     	1292
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -28815,7 +28970,7 @@
 									fill_color 	13434879
 									quidu      	"5B6954C000F1"
 									width      	154
-									height     	1229
+									height     	1228
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -29189,7 +29344,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1298
 									Parent_View 	@1266
-									location   	(688, 1517)
+									location   	(688, 1516)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -29776,7 +29931,7 @@
 									fill_color 	13434879
 									quidu      	"5B6901C3030F"
 									width      	120
-									height     	1213
+									height     	1212
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -29813,7 +29968,7 @@
 									fill_color 	13434879
 									quidu      	"5B6901CA0236"
 									width      	229
-									height     	1213
+									height     	1212
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -29857,7 +30012,7 @@
 									fill_color 	13434879
 									quidu      	"5B6901CC01E9"
 									width      	157
-									height     	1213
+									height     	1212
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -29892,7 +30047,7 @@
 									    location   	(1728, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	457
+									    max_width  	453
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -29900,8 +30055,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6901CF01B0"
-									width      	468
-									height     	1213
+									width      	57
+									height     	1212
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -29945,7 +30100,7 @@
 									fill_color 	13434879
 									quidu      	"5B6901D101FA"
 									width      	154
-									height     	1197
+									height     	1196
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -29989,7 +30144,7 @@
 									fill_color 	13434879
 									quidu      	"5B6900B9003E"
 									width      	154
-									height     	1213
+									height     	1212
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -30363,7 +30518,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1351
 									Parent_View 	@1319
-									location   	(608, 1437)
+									location   	(608, 1436)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -31334,7 +31489,7 @@
 									fill_color 	13434879
 									quidu      	"5B69056400E0"
 									width      	120
-									height     	1149
+									height     	1148
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -31371,7 +31526,7 @@
 									fill_color 	13434879
 									quidu      	"5B6905F500D9"
 									width      	229
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -31415,7 +31570,7 @@
 									fill_color 	13434879
 									quidu      	"5B6905F700F4"
 									width      	157
-									height     	1149
+									height     	1148
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -31458,8 +31613,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6905FD03D3"
-									width      	396
-									height     	1149
+									width      	57
+									height     	1148
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -31503,7 +31658,7 @@
 									fill_color 	13434879
 									quidu      	"5B6905FB0242"
 									width      	154
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -31547,7 +31702,7 @@
 									fill_color 	13434879
 									quidu      	"5B69057600A8"
 									width      	154
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -31921,7 +32076,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1420
 									Parent_View 	@1388
-									location   	(720, 1373)
+									location   	(720, 1372)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -32621,7 +32776,7 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B69078A00FE"
-									width      	376
+									width      	57
 									height     	1136
 									icon_height 	57
 									icon_width 	57
@@ -33403,6 +33558,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640AE30103"
+									compartment 	(object Compartment
+									    Parent_View 	@1477
+									    location   	(2172, 1325)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	5
+									    max_width  	643
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -33656,7 +33828,7 @@
 									fill_color 	13434879
 									quidu      	"5B69088C019B"
 									width      	120
-									height     	1181
+									height     	1180
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -33693,7 +33865,7 @@
 									fill_color 	13434879
 									quidu      	"5B690939003C"
 									width      	229
-									height     	1181
+									height     	1180
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -33737,7 +33909,7 @@
 									fill_color 	13434879
 									quidu      	"5B69093A027A"
 									width      	157
-									height     	1181
+									height     	1180
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -33772,7 +33944,7 @@
 									    location   	(1712, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	405
+									    max_width  	400
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -33780,8 +33952,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6909430173"
-									width      	416
-									height     	1181
+									width      	57
+									height     	1180
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -33825,7 +33997,7 @@
 									fill_color 	13434879
 									quidu      	"5B69093C020C"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -33869,7 +34041,7 @@
 									fill_color 	13434879
 									quidu      	"5B69085A02F3"
 									width      	154
-									height     	1181
+									height     	1180
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -34243,7 +34415,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1524
 									Parent_View 	@1492
-									location   	(624, 1405)
+									location   	(624, 1404)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -34568,6 +34740,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640ADB0359"
+									compartment 	(object Compartment
+									    Parent_View 	@1529
+									    location   	(2380, 1373)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	5
+									    max_width  	644
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -34851,7 +35040,7 @@
 									fill_color 	13434879
 									quidu      	"5B695CE303BD"
 									width      	120
-									height     	1213
+									height     	1212
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -34888,7 +35077,7 @@
 									fill_color 	13434879
 									quidu      	"5B695DA1027E"
 									width      	229
-									height     	1277
+									height     	1276
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -34932,7 +35121,7 @@
 									fill_color 	13434879
 									quidu      	"5B695DA301D6"
 									width      	157
-									height     	1277
+									height     	1276
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -34967,7 +35156,7 @@
 									    location   	(1712, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	519
+									    max_width  	517
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -34975,8 +35164,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B695DA501ED"
-									width      	530
-									height     	1277
+									width      	57
+									height     	1276
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -35020,7 +35209,7 @@
 									fill_color 	13434879
 									quidu      	"5B695DA701E5"
 									width      	154
-									height     	1277
+									height     	1276
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -35064,7 +35253,7 @@
 									fill_color 	13434879
 									quidu      	"5B695CEB00EC"
 									width      	154
-									height     	1277
+									height     	1276
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -35438,7 +35627,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1577
 									Parent_View 	@1545
-									location   	(736, 1501)
+									location   	(736, 1500)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -35757,6 +35946,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640AEE021A"
+									compartment 	(object Compartment
+									    Parent_View 	@1582
+									    location   	(2301, 1197)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	6
+									    max_width  	613
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -36134,7 +36340,7 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B695C340175"
-									width      	476
+									width      	57
 									height     	1152
 									icon_height 	57
 									icon_width 	57
@@ -37174,7 +37380,7 @@
 									fill_color 	13434879
 									quidu      	"5B69115C0098"
 									width      	120
-									height     	1165
+									height     	1164
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -37211,7 +37417,7 @@
 									fill_color 	13434879
 									quidu      	"5B6911DF01A8"
 									width      	229
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -37255,7 +37461,7 @@
 									fill_color 	13434879
 									quidu      	"5B6911E1005A"
 									width      	157
-									height     	1165
+									height     	1164
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -37290,7 +37496,7 @@
 									    location   	(1760, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	356
+									    max_width  	345
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -37298,8 +37504,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6911E30388"
-									width      	368
-									height     	1165
+									width      	57
+									height     	1164
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -37343,7 +37549,7 @@
 									fill_color 	13434879
 									quidu      	"5B6911E600DC"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -37387,7 +37593,7 @@
 									fill_color 	13434879
 									quidu      	"5B69116A0009"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -37761,7 +37967,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1681
 									Parent_View 	@1649
-									location   	(592, 1389)
+									location   	(592, 1388)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -38333,7 +38539,7 @@
 									fill_color 	13434879
 									quidu      	"5B6912DD0033"
 									width      	120
-									height     	1245
+									height     	1244
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -38370,7 +38576,7 @@
 									fill_color 	13434879
 									quidu      	"5B691344034F"
 									width      	229
-									height     	1245
+									height     	1244
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -38414,7 +38620,7 @@
 									fill_color 	13434879
 									quidu      	"5B691346023E"
 									width      	157
-									height     	1245
+									height     	1244
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -38457,8 +38663,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B691348033D"
-									width      	404
-									height     	1245
+									width      	57
+									height     	1244
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -38502,7 +38708,7 @@
 									fill_color 	13434879
 									quidu      	"5B69134A03D7"
 									width      	154
-									height     	1245
+									height     	1244
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -38546,7 +38752,7 @@
 									fill_color 	13434879
 									quidu      	"5B6912D7022B"
 									width      	154
-									height     	1181
+									height     	1180
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -38920,7 +39126,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1733
 									Parent_View 	@1701
-									location   	(624, 1469)
+									location   	(624, 1468)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -39239,6 +39445,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B63C281024B"
+									compartment 	(object Compartment
+									    Parent_View 	@1738
+									    location   	(2175, 1373)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	20
+									    max_width  	732
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -39492,7 +39715,7 @@
 									fill_color 	13434879
 									quidu      	"5B69145B00CF"
 									width      	120
-									height     	1149
+									height     	1148
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -39529,7 +39752,7 @@
 									fill_color 	13434879
 									quidu      	"5B691541003E"
 									width      	229
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -39573,7 +39796,7 @@
 									fill_color 	13434879
 									quidu      	"5B6915450326"
 									width      	157
-									height     	1149
+									height     	1148
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -39608,7 +39831,7 @@
 									    location   	(1584, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	356
+									    max_width  	345
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -39616,8 +39839,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B69154A02FC"
-									width      	368
-									height     	1149
+									width      	57
+									height     	1148
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -39661,7 +39884,7 @@
 									fill_color 	13434879
 									quidu      	"5B69154D032B"
 									width      	154
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -39705,7 +39928,7 @@
 									fill_color 	13434879
 									quidu      	"5B691457004F"
 									width      	154
-									height     	1133
+									height     	1132
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -40079,7 +40302,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1785
 									Parent_View 	@1753
-									location   	(592, 1373)
+									location   	(592, 1372)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -40651,7 +40874,7 @@
 									fill_color 	13434879
 									quidu      	"5B69162E02AE"
 									width      	120
-									height     	1165
+									height     	1164
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -40688,7 +40911,7 @@
 									fill_color 	13434879
 									quidu      	"5B6947B101FF"
 									width      	229
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -40732,7 +40955,7 @@
 									fill_color 	13434879
 									quidu      	"5B6947B60048"
 									width      	157
-									height     	1165
+									height     	1164
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -40767,7 +40990,7 @@
 									    location   	(1440, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	340
+									    max_width  	345
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -40775,8 +40998,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6947B801AE"
-									width      	352
-									height     	1165
+									width      	57
+									height     	1164
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -40820,7 +41043,7 @@
 									fill_color 	13434879
 									quidu      	"5B6947BB024D"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -40864,7 +41087,7 @@
 									fill_color 	13434879
 									quidu      	"5B69162B02CF"
 									width      	154
-									height     	1133
+									height     	1132
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -41238,7 +41461,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1837
 									Parent_View 	@1805
-									location   	(560, 1389)
+									location   	(560, 1388)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -41690,7 +41913,7 @@
 									supplier   	@1844
 									vertices   	(list Points
 									    (293, 883)
-									    (474, 700))
+									    (536, 636))
 									line_style 	0)
 								    (object UsesView "" @1848
 									stereotype 	TRUE
@@ -41810,7 +42033,7 @@
 									fill_color 	13434879
 									quidu      	"5B6948F10243"
 									width      	120
-									height     	1181
+									height     	1180
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -41838,7 +42061,7 @@
 									    location   	(576, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	651
+									    max_width  	687
 									    justify    	0
 									    label      	"")
 									icon       	"boundary"
@@ -41847,7 +42070,7 @@
 									fill_color 	13434879
 									quidu      	"5B6949A80383"
 									width      	229
-									height     	1181
+									height     	1180
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -41891,7 +42114,7 @@
 									fill_color 	13434879
 									quidu      	"5B6949AB0035"
 									width      	157
-									height     	1181
+									height     	1180
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -41926,7 +42149,7 @@
 									    location   	(1552, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	373
+									    max_width  	369
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -41934,8 +42157,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6949AC03D6"
-									width      	384
-									height     	1181
+									width      	57
+									height     	1180
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -41979,7 +42202,7 @@
 									fill_color 	13434879
 									quidu      	"5B6949AF02AE"
 									width      	154
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -42023,7 +42246,7 @@
 									fill_color 	13434879
 									quidu      	"5B6948EB02CE"
 									width      	154
-									height     	1133
+									height     	1132
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -42397,7 +42620,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1889
 									Parent_View 	@1857
-									location   	(576, 1405)
+									location   	(576, 1404)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -42849,7 +43072,7 @@
 									supplier   	@1896
 									vertices   	(list Points
 									    (336, 856)
-									    (672, 656))
+									    (752, 604))
 									line_style 	0)
 								    (object UsesView "" @1900
 									stereotype 	TRUE
@@ -42969,7 +43192,7 @@
 									fill_color 	13434879
 									quidu      	"5B694AB3038C"
 									width      	120
-									height     	1165
+									height     	1164
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -42997,7 +43220,7 @@
 									    location   	(640, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	651
+									    max_width  	687
 									    justify    	0
 									    label      	"")
 									icon       	"boundary"
@@ -43006,7 +43229,7 @@
 									fill_color 	13434879
 									quidu      	"5B694B710322"
 									width      	229
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -43050,7 +43273,7 @@
 									fill_color 	13434879
 									quidu      	"5B694B730336"
 									width      	157
-									height     	1165
+									height     	1164
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -43085,7 +43308,7 @@
 									    location   	(1664, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	377
+									    max_width  	368
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -43093,8 +43316,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B694B760175"
-									width      	388
-									height     	1165
+									width      	57
+									height     	1164
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -43138,7 +43361,7 @@
 									fill_color 	13434879
 									quidu      	"5B694B7B020B"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -43182,7 +43405,7 @@
 									fill_color 	13434879
 									quidu      	"5B694AA80381"
 									width      	154
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -43556,7 +43779,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @1941
 									Parent_View 	@1909
-									location   	(640, 1389)
+									location   	(640, 1388)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -44002,6 +44225,23 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B63C281024B"
+								compartment 	(object Compartment
+								    Parent_View 	@1950
+								    location   	(2447, 1421)
+								    font       	(object Font
+									size       	9
+									face       	"Arial"
+									bold       	FALSE
+									italics    	FALSE
+									underline  	FALSE
+									strike     	FALSE
+									color      	0
+									default_color 	TRUE)
+								    icon_style 	"Icon"
+								    anchor     	2
+								    nlines     	20
+								    max_width  	731
+								    justify    	0)
 								height     	154
 								annotation 	8
 								autoResize 	TRUE)
@@ -44022,7 +44262,7 @@
 								client     	@1946
 								supplier   	@1948
 								vertices   	(list Points
-								    (1234, 961)
+								    (1157, 893)
 								    (1556, 1255))
 								line_style 	0)
 							    (object UsesView "" @1953
@@ -44124,7 +44364,7 @@
 								fill_color 	13434879
 								quidu      	"5B67C42000FF"
 								width      	120
-								height     	1164
+								height     	1163
 								icon_height 	162
 								icon_width 	120
 								icon_y_offset 	0
@@ -44161,7 +44401,7 @@
 								fill_color 	13434879
 								quidu      	"5B67F96300FF"
 								width      	229
-								height     	1276
+								height     	1275
 								icon_height 	153
 								icon_width 	229
 								icon_y_offset 	0
@@ -44205,7 +44445,7 @@
 								fill_color 	13434879
 								quidu      	"5B67F97F0067"
 								width      	157
-								height     	1276
+								height     	1275
 								icon_height 	164
 								icon_width 	157
 								icon_y_offset 	0
@@ -44240,7 +44480,7 @@
 								    location   	(1664, 248)
 								    anchor_loc 	1
 								    nlines     	2
-								    max_width  	368
+								    max_width  	369
 								    justify    	0
 								    label      	"")
 								icon       	"Interface"
@@ -44248,8 +44488,8 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B67F9820144"
-								width      	380
-								height     	1276
+								width      	57
+								height     	1275
 								icon_height 	57
 								icon_width 	57
 								icon_y_offset 	0
@@ -44293,7 +44533,7 @@
 								fill_color 	13434879
 								quidu      	"5B67F966013B"
 								width      	154
-								height     	1260
+								height     	1259
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -44337,7 +44577,7 @@
 								fill_color 	13434879
 								quidu      	"5B67F9A00232"
 								width      	154
-								height     	1276
+								height     	1275
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -44711,7 +44951,7 @@
 								ordinal    	8)
 							    (object Destruction_Marker @1993
 								Parent_View 	@1961
-								location   	(608, 1500)
+								location   	(608, 1499)
 								line_color 	3342489
 								fill_color 	13434879))))))
 					logical_presentations 	(list unit_reference_list
@@ -45156,6 +45396,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640AB7034C"
+									compartment 	(object Compartment
+									    Parent_View 	@2002
+									    location   	(2340, 1293)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	6
+									    max_width  	631
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -45287,7 +45544,7 @@
 									fill_color 	13434879
 									quidu      	"5B68134000B5"
 									width      	120
-									height     	1165
+									height     	1164
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -45324,7 +45581,7 @@
 									fill_color 	13434879
 									quidu      	"5B6813540257"
 									width      	229
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -45368,7 +45625,7 @@
 									fill_color 	13434879
 									quidu      	"5B681358013D"
 									width      	157
-									height     	1165
+									height     	1164
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -45403,7 +45660,7 @@
 									    location   	(1568, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	393
+									    max_width  	388
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -45411,8 +45668,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B68135A0326"
-									width      	404
-									height     	1165
+									width      	57
+									height     	1164
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -45456,7 +45713,7 @@
 									fill_color 	13434879
 									quidu      	"5B68135F0282"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -45500,7 +45757,7 @@
 									fill_color 	13434879
 									quidu      	"5B681346037F"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -45874,7 +46131,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @2045
 									Parent_View 	@2013
-									location   	(624, 1389)
+									location   	(624, 1388)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -46310,6 +46567,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640AB7034C"
+									compartment 	(object Compartment
+									    Parent_View 	@2054
+									    location   	(2340, 1309)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	6
+									    max_width  	631
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -46441,7 +46715,7 @@
 									fill_color 	13434879
 									quidu      	"5B6814DF0166"
 									width      	120
-									height     	1149
+									height     	1148
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -46478,7 +46752,7 @@
 									fill_color 	13434879
 									quidu      	"5B6814E90322"
 									width      	229
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -46522,7 +46796,7 @@
 									fill_color 	13434879
 									quidu      	"5B6814EC0137"
 									width      	157
-									height     	1149
+									height     	1148
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -46565,8 +46839,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6814F20125"
-									width      	396
-									height     	1149
+									width      	57
+									height     	1148
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -46610,7 +46884,7 @@
 									fill_color 	13434879
 									quidu      	"5B6814EF0306"
 									width      	154
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -46654,7 +46928,7 @@
 									fill_color 	13434879
 									quidu      	"5B6814E500DC"
 									width      	154
-									height     	1149
+									height     	1148
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -47028,7 +47302,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @2097
 									Parent_View 	@2065
-									location   	(560, 1373)
+									location   	(560, 1372)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -47417,6 +47691,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640ACB03E3"
+									compartment 	(object Compartment
+									    Parent_View 	@2103
+									    location   	(2283, 1133)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	6
+									    max_width  	678
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -47672,7 +47963,7 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B68F9A502FD"
-									width      	416
+									width      	57
 									height     	1152
 									icon_height 	57
 									icon_width 	57
@@ -48707,7 +48998,7 @@
 									fill_color 	13434879
 									quidu      	"5B68FB6E01A0"
 									width      	120
-									height     	1165
+									height     	1164
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -48744,7 +49035,7 @@
 									fill_color 	13434879
 									quidu      	"5B68FB7903A1"
 									width      	229
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -48788,7 +49079,7 @@
 									fill_color 	13434879
 									quidu      	"5B68FB7D007F"
 									width      	157
-									height     	1165
+									height     	1164
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -48823,7 +49114,7 @@
 									    location   	(1712, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	373
+									    max_width  	369
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -48831,8 +49122,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B68FB7F02F5"
-									width      	384
-									height     	1165
+									width      	57
+									height     	1164
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -48876,7 +49167,7 @@
 									fill_color 	13434879
 									quidu      	"5B68FB840034"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -48920,7 +49211,7 @@
 									fill_color 	13434879
 									quidu      	"5B68FB7400B2"
 									width      	154
-									height     	1165
+									height     	1164
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -49294,7 +49585,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @2198
 									Parent_View 	@2166
-									location   	(624, 1389)
+									location   	(624, 1388)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -49829,6 +50120,23 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640AD402C5"
+								compartment 	(object Compartment
+								    Parent_View 	@2207
+								    location   	(2041, 1405)
+								    font       	(object Font
+									size       	9
+									face       	"Arial"
+									bold       	FALSE
+									italics    	FALSE
+									underline  	FALSE
+									strike     	FALSE
+									color      	0
+									default_color 	TRUE)
+								    icon_style 	"Icon"
+								    anchor     	2
+								    nlines     	6
+								    max_width  	650
+								    justify    	0)
 								height     	154
 								annotation 	8
 								autoResize 	TRUE)
@@ -50004,7 +50312,7 @@
 								fill_color 	13434879
 								quidu      	"5B6809A70386"
 								width      	120
-								height     	1980
+								height     	1979
 								icon_height 	162
 								icon_width 	120
 								icon_y_offset 	0
@@ -50041,7 +50349,7 @@
 								fill_color 	13434879
 								quidu      	"5B680A1B036E"
 								width      	229
-								height     	1980
+								height     	1979
 								icon_height 	153
 								icon_width 	229
 								icon_y_offset 	0
@@ -50092,7 +50400,7 @@
 								fill_color 	13434879
 								quidu      	"5B680A1D0195"
 								width      	157
-								height     	1980
+								height     	1979
 								icon_height 	164
 								icon_width 	157
 								icon_y_offset 	0
@@ -50149,8 +50457,8 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B680A1E0335"
-								width      	476
-								height     	1980
+								width      	57
+								height     	1979
 								icon_height 	57
 								icon_width 	57
 								icon_y_offset 	0
@@ -50208,7 +50516,7 @@
 								fill_color 	13434879
 								quidu      	"5B680A200186"
 								width      	154
-								height     	1980
+								height     	1979
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -50266,7 +50574,7 @@
 								fill_color 	13434879
 								quidu      	"5B680A270296"
 								width      	154
-								height     	1980
+								height     	1979
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -50967,7 +51275,7 @@
 								ordinal    	16)
 							    (object Destruction_Marker @2278
 								Parent_View 	@2222
-								location   	(544, 2204)
+								location   	(544, 2203)
 								line_color 	3342489
 								fill_color 	13434879))))))
 					logical_presentations 	(list unit_reference_list
@@ -51442,7 +51750,7 @@
 									client     	@2284
 									supplier   	@2285
 									vertices   	(list Points
-									    (1215, 976)
+									    (1109, 861)
 									    (1367, 1140))
 									line_style 	0)
 								    (object UsesView "" @2290
@@ -51453,7 +51761,7 @@
 									supplier   	@2286
 									vertices   	(list Points
 									    (1418, 1151)
-									    (1708, 1004))
+									    (1844, 932))
 									line_style 	0)
 								    (object UsesView "" @2291
 									stereotype 	TRUE
@@ -51504,7 +51812,7 @@
 									supplier   	@2284
 									vertices   	(list Points
 									    (1367, 1140)
-									    (1215, 976))
+									    (1109, 861))
 									line_style 	0)
 								    (object UsesView "" @2295
 									stereotype 	TRUE
@@ -51552,7 +51860,7 @@
 									fill_color 	13434879
 									quidu      	"5B6807240065"
 									width      	120
-									height     	1196
+									height     	1195
 									icon_height 	162
 									icon_width 	120
 									icon_y_offset 	0
@@ -51589,7 +51897,7 @@
 									fill_color 	13434879
 									quidu      	"5B68072900D5"
 									width      	229
-									height     	1228
+									height     	1227
 									icon_height 	153
 									icon_width 	229
 									icon_y_offset 	0
@@ -51633,7 +51941,7 @@
 									fill_color 	13434879
 									quidu      	"5B68072A01D6"
 									width      	157
-									height     	1228
+									height     	1227
 									icon_height 	164
 									icon_width 	157
 									icon_y_offset 	0
@@ -51668,7 +51976,7 @@
 									    location   	(1696, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	555
+									    max_width  	546
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -51676,8 +51984,8 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B6807410346"
-									width      	566
-									height     	1228
+									width      	57
+									height     	1227
 									icon_height 	57
 									icon_width 	57
 									icon_y_offset 	0
@@ -51721,7 +52029,7 @@
 									fill_color 	13434879
 									quidu      	"5B68074302CD"
 									width      	154
-									height     	1228
+									height     	1227
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -51765,7 +52073,7 @@
 									fill_color 	13434879
 									quidu      	"5B680792006E"
 									width      	154
-									height     	1228
+									height     	1227
 									icon_height 	153
 									icon_width 	154
 									icon_y_offset 	0
@@ -52139,7 +52447,7 @@
 									ordinal    	8)
 								    (object Destruction_Marker @2330
 									Parent_View 	@2298
-									location   	(608, 1452)
+									location   	(608, 1451)
 									line_color 	3342489
 									fill_color 	13434879))))))
 						logical_presentations 	(list unit_reference_list
@@ -52498,7 +52806,7 @@
 									supplier   	@2336
 									vertices   	(list Points
 									    (432, 917)
-									    (693, 755))
+									    (848, 654))
 									line_style 	0)
 								    (object UsesView "" @2338
 									stereotype 	TRUE
@@ -52507,7 +52815,7 @@
 									client     	@2336
 									supplier   	@2335
 									vertices   	(list Points
-									    (693, 755)
+									    (848, 654)
 									    (432, 917))
 									line_style 	0)
 								    (object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::七彩云综合管理::商家管理::BusinessesManageServiceImpl" @2339
@@ -52548,7 +52856,7 @@
 									client     	@2336
 									supplier   	@2339
 									vertices   	(list Points
-									    (1098, 816)
+									    (1013, 712)
 									    (1337, 1108))
 									line_style 	0)
 								    (object UsesView "" @2341
@@ -52559,7 +52867,7 @@
 									supplier   	@2336
 									vertices   	(list Points
 									    (1337, 1108)
-									    (1098, 816))
+									    (1013, 712))
 									line_style 	0)
 								    (object ClassView "Class" "Logical View::Design Model::Use-Case Realizations::七彩云综合管理::商家管理::商家账户管理::MidBusinessesManageDAO" @2342
 									ShowCompartmentStereotypes 	TRUE
@@ -52599,7 +52907,7 @@
 									supplier   	@2342
 									vertices   	(list Points
 									    (1384, 1108)
-									    (1563, 939))
+									    (1689, 819))
 									line_style 	0)
 								    (object ClassView "Class" "Logical View::Design Model::<会员刷卡管理系统> Layer::Entity::MidBusinesses" @2344
 									ShowCompartmentStereotypes 	TRUE
@@ -52628,6 +52936,23 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B640ADB0359"
+									compartment 	(object Compartment
+									    Parent_View 	@2344
+									    location   	(2076, 1373)
+									    font       	(object Font
+										size       	9
+										face       	"Arial"
+										bold       	FALSE
+										italics    	FALSE
+										underline  	FALSE
+										strike     	FALSE
+										color      	0
+										default_color 	TRUE)
+									    icon_style 	"Icon"
+									    anchor     	2
+									    nlines     	5
+									    max_width  	644
+									    justify    	0)
 									height     	154
 									annotation 	8
 									autoResize 	TRUE)
@@ -52638,7 +52963,7 @@
 									client     	@2342
 									supplier   	@2344
 									vertices   	(list Points
-									    (2001, 875)
+									    (1850, 779)
 									    (2339, 1087))
 									line_style 	0)
 								    (object UsesView "" @2346
@@ -52659,9 +52984,9 @@
 									client     	@2342
 									supplier   	@2339
 									vertices   	(list Points
-									    (1765, 939)
+									    (1767, 915)
 									    (1759, 1203)
-									    (1500, 1157))
+									    (1386, 1137))
 									line_style 	0)))
 							    (object InteractionDiagram "时序图"
 								mechanism_ref 	@2334
@@ -52814,7 +53139,7 @@
 									    location   	(1712, 248)
 									    anchor_loc 	1
 									    nlines     	2
-									    max_width  	552
+									    max_width  	546
 									    justify    	0
 									    label      	"")
 									icon       	"Interface"
@@ -52822,7 +53147,7 @@
 									line_color 	3342489
 									fill_color 	13434879
 									quidu      	"5B68084303A7"
-									width      	540
+									width      	57
 									height     	1376
 									icon_height 	57
 									icon_width 	57
@@ -53857,6 +54182,23 @@
 								line_color 	3342489
 								fill_color 	13434879
 								quidu      	"5B640AD402C5"
+								compartment 	(object Compartment
+								    Parent_View 	@2398
+								    location   	(2041, 1485)
+								    font       	(object Font
+									size       	9
+									face       	"Arial"
+									bold       	FALSE
+									italics    	FALSE
+									underline  	FALSE
+									strike     	FALSE
+									color      	0
+									default_color 	TRUE)
+								    icon_style 	"Icon"
+								    anchor     	2
+								    nlines     	6
+								    max_width  	650
+								    justify    	0)
 								height     	154
 								annotation 	8
 								autoResize 	TRUE)
@@ -53877,7 +54219,7 @@
 								client     	@2395
 								supplier   	@2396
 								vertices   	(list Points
-								    (1019, 748)
+								    (940, 685)
 								    (1395, 1049))
 								line_style 	0)
 							    (object UsesView "" @2401
@@ -53988,7 +54330,7 @@
 								fill_color 	13434879
 								quidu      	"5B68047A028E"
 								width      	120
-								height     	1180
+								height     	1179
 								icon_height 	162
 								icon_width 	120
 								icon_y_offset 	0
@@ -54025,7 +54367,7 @@
 								fill_color 	13434879
 								quidu      	"5B6804D702FE"
 								width      	229
-								height     	1180
+								height     	1179
 								icon_height 	153
 								icon_width 	229
 								icon_y_offset 	0
@@ -54069,7 +54411,7 @@
 								fill_color 	13434879
 								quidu      	"5B6804F603D5"
 								width      	157
-								height     	1180
+								height     	1179
 								icon_height 	164
 								icon_width 	157
 								icon_y_offset 	0
@@ -54089,7 +54431,7 @@
 								    y_coord    	-89
 								    Nested     	TRUE))
 							    (object InterObjView "$UNNAMED$384" @2415
-								location   	(1440, 224)
+								location   	(1440, 225)
 								font       	(object Font
 								    size       	9
 								    face       	"Arial"
@@ -54101,7 +54443,7 @@
 								    default_color 	TRUE)
 								label      	(object ItemLabel
 								    Parent_View 	@2415
-								    location   	(1440, 224)
+								    location   	(1440, 225)
 								    fill_color 	13434879
 								    anchor_loc 	1
 								    nlines     	2
@@ -54114,7 +54456,7 @@
 								fill_color 	13434879
 								quidu      	"5B6804ED0345"
 								width      	384
-								height     	1180
+								height     	1178
 								icon_height 	0
 								icon_width 	0
 								icon_y_offset 	0
@@ -54158,7 +54500,7 @@
 								fill_color 	13434879
 								quidu      	"5B6804FA00D6"
 								width      	154
-								height     	1180
+								height     	1179
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -54202,7 +54544,7 @@
 								fill_color 	13434879
 								quidu      	"5B680515018F"
 								width      	154
-								height     	1180
+								height     	1179
 								icon_height 	153
 								icon_width 	154
 								icon_y_offset 	0
@@ -54576,7 +54918,7 @@
 								ordinal    	8)
 							    (object Destruction_Marker @2441
 								Parent_View 	@2409
-								location   	(544, 1404)
+								location   	(544, 1403)
 								line_color 	3342489
 								fill_color 	13434879))))))
 					logical_presentations 	(list unit_reference_list
