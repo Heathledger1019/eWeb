@@ -7619,7 +7619,7 @@
 						ShowCompartmentStereotypes 	TRUE
 						IncludeAttribute 	TRUE
 						IncludeOperation 	TRUE
-						location   	(400, 288)
+						location   	(640, 416)
 						font       	(object Font
 						    size       	9
 						    face       	"Arial"
@@ -7631,7 +7631,7 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@323
-						    location   	(399, 449)
+						    location   	(639, 577)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	438
