@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>显示景点</title>
+    <style>
+        body {
+            background: #eee;
+            margin-top: 20px;
+            text-align: center;
+            font-family: "微软雅黑";
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2>风景</h2>
+    <input type="text" placeholder="输入要查询的地点" id="place" >
+    <input type="button" value="查询" id="button" onclick="search()">
+    <div id="output"></div>
+
+    <script type="text/javascript" charset="utf-8">
+        function formatterDateTime() {
+            var date = new Date()
+            var month = date.getMonth() + 1
+            var datetime = date.getFullYear()
+                + ""// "年"
+                + (month >= 10 ? month : "0" + month)
+                + ""// "月"
+                + (date.getDate() < 10 ? "0" + date.getDate() : date
+                    .getDate())
+                + ""
+                + (date.getHours() < 10 ? "0" + date.getHours() : date
+                    .getHours())
+                + ""
+                + (date.getMinutes() < 10 ? "0" + date.getMinutes() : date
+                    .getMinutes())
+                + ""
+                + (date.getSeconds() < 10 ? "0" + date.getSeconds() : date
+                    .getSeconds());
+            return datetime;
+        }
+        //alert(document.getElementById("place").value);
+        function search() {
+            $.ajax({
+                type: 'post',
+                url: 'http://route.showapi.com/268-1',
+                dataType: 'json',
+                data: {
+                    "showapi_timestamp": formatterDateTime(),
+                    "showapi_appid": '71800', //这里需要改成自己的appid
+                    "showapi_sign": '4fd4ef8b93d94e69b929c0f681a5f9c1',  //这里需要改成自己的应用的密钥secret
+                    "keyword": $('#place').get(0).value,
+                    //"keyword": "广州",
+                    "proId": "",
+                    "cityId": "",
+                    "areaId": "",
+                    "page": "1"
+
+                },
+
+                error: function (XmlHttpRequest, textStatus, errorThrown) {
+                    alert("操作失败!");
+                },
+                success: function (result) {
+                    //console.log(result) //console变量在ie低版本下不能用
+                    //alert(result.showapi_res_code);
+                    var html;
+                    var i;
+                    var num = parseInt(result.showapi_res_body.pagebean.allNum, 10);
+                    html = '<table border="1">' + '<tr>'
+                        + '<th>' + '景点名称' + '</th>'
+                        + '<th>' + '景点地址' + '</th>'
+                        + '<th>' + '开放时间' + '</th>'
+                        + '<th>' + '景点描述' + '</th>'
+                        + '<th>' + '注意事项' + '</th>'
+                        + '</tr>';
+                    for (i = 0; i < 20 && i < num; i++) {
+                        html += '<tr>'
+                            + '<th>' + result.showapi_res_body.pagebean.contentlist[i].name + '</th>'
+                            + '<th>' + result.showapi_res_body.pagebean.contentlist[i].address + '</th>'
+                            + '<th>' + result.showapi_res_body.pagebean.contentlist[i].opentime + '</th>'
+                            + '<th>' + result.showapi_res_body.pagebean.contentlist[i].summary + '</th>'
+                            + '<th>' + result.showapi_res_body.pagebean.contentlist[i].attention + '</th>'
+                            + '</tr>';
+                    }
+                    $("#output").html(html);
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

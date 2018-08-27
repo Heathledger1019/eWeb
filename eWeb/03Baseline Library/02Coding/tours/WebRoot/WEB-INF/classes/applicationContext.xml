@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd" xmlns:tx="http://www.springframework.org/schema/tx">
+
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/ts"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="123456"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>Session/Scenicspot.hbm.xml</value>
+				<value>Session/Emergency.hbm.xml</value>
+				<value>Session/Tourist.hbm.xml</value>
+				<value>Session/Administrator.hbm.xml</value>
+				<value>Session/Hotel.hbm.xml</value>
+				<value>Session/Restaurant.hbm.xml</value>
+				<value>Session/Complaint.hbm.xml</value>
+				<value>Session/Midscenicspot.hbm.xml</value></list>
+		</property></bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	<bean id="ScenicspotDAO" class="DAO.ScenicspotDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="EmergencyDAO" class="DAO.EmergencyDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="TouristDAO" class="DAO.TouristDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="AdministratorDAO" class="DAO.AdministratorDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="HotelDAO" class="DAO.HotelDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="RestaurantDAO" class="DAO.RestaurantDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="ComplaintDAO" class="DAO.ComplaintDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="MidscenicspotDAO" class="DAO.MidscenicspotDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!-- 游客表服务层 -->
+	<bean id="hotelset" class="java.util.HashSet">
+	</bean>
+	<bean id="complaintset" class="java.util.HashSet">
+	</bean>
+	
+	<bean id="touristservice" class="Service.TouristServiceImpl">
+		<property name="tdao" ref="TouristDAO">
+		</property>
+	</bean>
+	<bean id="tourist" class="Entity.Tourist">
+	</bean>
+	<bean id="touristS" class="java.util.ArrayList">
+	</bean>
+	<bean id="touristA" class="Action.TouristAction">
+		<property name="tservice" ref="touristservice">
+		</property>
+		<property name="t" ref="tourist">
+		</property>
+		<property name="ts" ref="touristS">
+		</property>
+		<property name="hset" ref="hotelset">
+		</property>
+		<property name="cset" ref="complaintset">
+		</property>
+		<property name="hserviceinTA" ref="hotelservice">
+		</property>
+		<property name="cserviceinTA" ref="complaintservice">
+		</property>
+		
+	</bean>
+	<!-- 管理员表服务层 -->
+	<bean id="emergencyset" class="java.util.HashSet">
+	</bean>
+	
+	<bean id="adminservice" class="Service.AdminServiceImpl">
+		<property name="adao" ref="AdministratorDAO">
+		</property>
+	</bean>
+	<bean id="admin" class="Entity.Administrator">
+	</bean>
+	<bean id="adminS" class="java.util.ArrayList">
+	</bean>
+	<bean id="adminA" class="Action.AdminAction">
+		<property name="aservice" ref="adminservice">
+		</property>
+		<property name="a" ref="admin">
+		</property>
+		<property name="as" ref="adminS">
+		</property>
+		<property name="eset" ref="emergencyset">
+		</property>
+		<property name="eserviceinAA" ref="emergencyservice">
+		</property>
+	</bean>
+	<!-- 投诉表服务层 -->
+	<bean id="complaintservice" class="Service.ComplaintServiceImpl">
+		<property name="cdao" ref="ComplaintDAO">
+		</property>
+	</bean>
+	<bean id="complaint" class="Entity.Complaint">
+	</bean>
+	<bean id="complaintS" class="java.util.ArrayList">
+	</bean>
+	<bean id="complaintA" class="Action.ComplaintAction">
+		<property name="cservice" ref="complaintservice">
+		</property>
+		<property name="c" ref="complaint">
+		</property>
+		<property name="t" ref="tourist">
+		</property>
+		<property name="cs" ref="complaintS">
+		</property>
+		<property name="bs" ref="complaintS">
+		</property>
+		<property name="tserviceinCA" ref="touristservice">
+		</property>
+		<property name="cset" ref="complaintset">
+		</property>
+		
+	</bean>
+	<!-- 应急消息表服务层 -->
+	<bean id="emergencyservice" class="Service.EmergencyServiceImpl">
+		<property name="edao" ref="EmergencyDAO">
+		</property>
+	</bean>
+	<bean id="emergency" class="Entity.Emergency">
+	</bean>
+	<bean id="emergencyS" class="java.util.ArrayList">
+	</bean>
+	<bean id="emergencyA" class="Action.EmergencyAction">
+		<property name="eservice" ref="emergencyservice">
+		</property>
+		<property name="e" ref="emergency">
+		</property>
+		<property name="a" ref="admin">
+		</property>
+		<property name="es" ref="emergencyS">
+		</property>
+		<property name="aserviceinEA" ref="adminservice">
+		</property>
+	</bean>
+	
+	<!-- 酒店表服务层 -->
+	<bean id="tourSet" class="java.util.HashSet">
+	</bean>
+	<bean id="hotelservice" class="Service.HotelServiceImpl">
+		<property name="hdao" ref="HotelDAO">
+		</property>
+	</bean>
+	<bean id="hotel" class="Entity.Hotel">
+	</bean>
+	<bean id="hotelS" class="java.util.ArrayList">
+	</bean>
+	<bean id="hotelA" class="Action.HotelAction">
+		<property name="hservice" ref="hotelservice">
+		</property>
+		<property name="h" ref="hotel">
+		</property>
+		<property name="hs" ref="hotelS">
+		</property>
+		<property name="tset" ref="tourSet">
+		</property>
+		<property name="tserviceinHA" ref="touristservice">
+		</property>
+		<property name="hstemp" ref="hotelset">
+		</property>
+	</bean>
+	
+	</beans>

@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style>
+        body {
+            background: #eee;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: "微软雅黑";
+        }
+
+        #allmap {
+            height: 500px;
+            width: 100%;
+        }
+
+        #r-result,
+        #r-result table {
+            width: 100%;
+            font-size: 22px;
+        }
+
+        #result,
+        #back {
+            background-color: #169BD5;
+            color: rgb(255, 255, 255);
+            font-family: Microsoft YaHei;
+            font-size: 12px;
+            border-radius: 10px;
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PjkkDQK5Z93NjNb45kKfRdqf1LxSu7Wo"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <title>地图</title>
+</head>
+
+<body>
+    <h1>查询旅游线路</h1>
+    <input type="text" placeholder="出发地" id="start" />
+    <input type="text" placeholder="目的地" id="end" />
+    <div id="way">
+        <select name="vehicle" id="vehicle">
+            <option value="0">驾车</option>
+            <option value="1">公交</option>
+            <option value="2">步行</option>
+            <!--<option value="3">骑行</option>-->
+        </select>
+        <select name="title" id="title">
+            <option value="0">最少时间</option>
+            <option value="1">最短距离（最少换乘）</option>
+            <option value="2">避开高速（最少步行）</option>
+        </select>
+        <input type="button" id="result" value="查询" />
+        <input type="button" id="back" value="返回" onclick="history.back()" />
+    </div>
+    <div id="allmap"></div>
+    <div id="r-result"></div>
+</body>
+
+</html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+    map.addControl(new BMap.NavigationControl());
+    map.addControl(new BMap.ScaleControl());
+    //map.addControl(new BMap.MapTypeControl());
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+    function myFun(result) {
+        cityName = result.name;
+        map.setCenter(cityName);
+        //map.setCurrentCity(cityName);
+        alert("当前定位城市:" + cityName);
+    }
+    var myCity = new BMap.LocalCity();
+    myCity.get(myFun);
+
+    //三种驾车策略：最少时间，最短距离，避开高速
+    var routePolicy1 = [BMAP_DRIVING_POLICY_LEAST_TIME, BMAP_DRIVING_POLICY_LEAST_DISTANCE, BMAP_DRIVING_POLICY_AVOID_HIGHWAYS];
+    var routePolicy2 = [BMAP_TRANSIT_POLICY_LEAST_TIME, BMAP_TRANSIT_POLICY_LEAST_TRANSFER, BMAP_TRANSIT_POLICY_LEAST_WALKING, BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
+    $("#result").click(function () {
+        var start = $('#start').get(0).value;
+        var end =  $('#end').get(0).value;
+        map.clearOverlays();
+        var j = $("#vehicle").val();
+        var i = $("#title").val();
+        // alert(j);
+        if (j == 0) {
+            search1(start, end, routePolicy1[i]);
+        }
+        else if (j == 1) {
+            search2(start, end, routePolicy2[i]);
+        }
+        else if (j == 2) {
+            search3(start, end);
+        }
+
+        function search1(start, end, route) {
+            var driving = new BMap.DrivingRoute(map,
+                {
+                    renderOptions:
+                    {
+                        map: map,
+                        panel: "r-result",
+                        autoViewport: true
+                    },
+                    policy: route
+                });
+            driving.search(start, end);
+        }
+
+        function search2(start, end, route) {
+            var transit = new BMap.TransitRoute(map,
+                {
+                    renderOptions:
+                    {
+                        map: map,
+                        panel: "r-result",
+                        autoViewport: true
+                    },
+                    policy: route
+                });
+            transit.search(start, end);
+        }
+
+        function search3(start, end) {
+            var walking = new BMap.WalkingRoute(map,
+                {
+                    renderOptions:
+                    {
+                        map: map,
+                        panel: "r-result",
+                        autoViewport: true
+                    }
+                });
+            walking.search(start, end);
+        }
+    });
+</script>
